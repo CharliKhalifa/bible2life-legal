@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suppression de compte — Bible 2 Life</title>
+<meta name="description" content="Comment demander la suppression de votre compte Bible 2 Life et de vos données, et ce qui est supprimé ou conservé.">
+<style>
+  :root{
+    --laine:#FFF8F6;
+    --encre:#241C20;
+    --encre-douce:#6B5B61;
+    --rose:#F3B9C6;
+    --rose-fonce:#C8657E;
+    --trait:#EBD9DE;
+    --vert:#2f7d5e;
+    --vert-fond:#eaf5f0;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--laine);
+    color:var(--encre);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:18px;
+    line-height:1.65;
+  }
+  .bandeau{background:var(--rose);padding:2.5rem 1.5rem 2.2rem}
+  .contenu{max-width:40rem;margin:0 auto;padding:0 1.5rem}
+  .marque{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:.82rem;font-weight:600;color:#6E3A48;margin:0 0 .6rem;
+  }
+  h1{font-size:2.1rem;line-height:1.15;font-weight:600;margin:0 0 .5rem}
+  .maj{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:.9rem;color:#6E3A48;margin:0}
+  .chapo{margin:.8rem 0 0;color:#6E3A48;font-size:1.02rem}
+  main{padding:2.5rem 0 4rem}
+  h2{font-size:1.25rem;font-weight:600;margin:2.6rem 0 1rem;padding-top:1.4rem;border-top:1px solid var(--trait)}
+  h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+  p,li{color:var(--encre)}
+  a{color:var(--rose-fonce)}
+  a:focus-visible{outline:2px solid var(--rose-fonce);outline-offset:3px}
+
+  /* Procedure block: the one thing this page exists for, so it gets the
+     most visual weight — numbered, high-contrast, impossible to skim past. */
+  .procedure{display:flex;flex-direction:column;gap:14px}
+  .methode{
+    background:#fff;
+    border:2px solid var(--trait);
+    border-radius:18px;
+    padding:1.4rem 1.4rem 1.5rem;
+    position:relative;
+  }
+  .methode.recommandee{border-color:var(--vert)}
+  .badge{
+    display:inline-block;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--vert);
+    background:var(--vert-fond);
+    padding:.3rem .6rem;
+    border-radius:999px;
+    margin-bottom:.7rem;
+  }
+  .methode h3{
+    font-size:1.15rem;
+    font-weight:600;
+    margin:0 0 .9rem;
+  }
+  .etapes{
+    list-style:none;
+    counter-reset:etape;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:.6rem;
+  }
+  .etapes li{
+    counter-increment:etape;
+    display:flex;
+    gap:.8rem;
+    align-items:baseline;
+    font-size:.98rem;
+  }
+  .etapes li::before{
+    content:counter(etape);
+    flex-shrink:0;
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:50%;
+    background:var(--rose);
+    color:#6E3A48;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:.85rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform:translateY(2px);
+  }
+  .delai{
+    margin:1rem 0 0;
+    font-size:.9rem;
+    color:var(--encre-douce);
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  .delai strong{color:var(--encre)}
+  .mail-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    margin-top:1rem;
+    background:var(--rose-fonce);
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight:600;
+    font-size:.92rem;
+    text-decoration:none;
+    padding:.7rem 1.1rem;
+    border-radius:999px;
+  }
+
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.94rem}
+  th,td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid var(--trait);vertical-align:top}
+  th{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:.85rem;color:var(--encre-douce);font-weight:600}
+  td:first-child{font-weight:600;white-space:nowrap}
+
+  .encadre{
+    background:#fff;
+    border:1px solid var(--trait);
+    border-radius:14px;
+    padding:1.1rem 1.3rem;
+    margin:1.2rem 0;
+  }
+  .encadre p{margin:.4rem 0;font-size:.97rem}
+
+  footer{border-top:1px solid var(--trait);padding:1.8rem 0 3rem;font-size:.9rem;color:var(--encre-douce)}
+  @media (max-width:480px){body{font-size:17px}h1{font-size:1.7rem}}
+</style>
+</head>
+<body>
+
+<header class="bandeau">
+  <div class="contenu">
+    <p class="marque">Bible 2 Life</p>
+    <h1>Suppression de compte et de données</h1>
+    <p class="chapo">Comment demander la suppression de votre compte Bible 2 Life, ce qui est effacé, et ce qui peut être conservé un peu plus longtemps.</p>
+  </div>
+</header>
+
+<main class="contenu">
+
+<h2>Comment demander la suppression</h2>
+
+<div class="procedure">
+  <div class="methode recommandee">
+    <span class="badge">Recommandé · immédiat</span>
+    <h3>Depuis l'application</h3>
+    <ol class="etapes">
+      <li>Ouvrez Bible 2 Life et allez dans l'onglet <strong>Profil</strong>.</li>
+      <li>Faites défiler jusqu'à votre carte de compte, en bas de l'écran.</li>
+      <li>Appuyez sur <strong>« Supprimer mon compte »</strong>.</li>
+      <li>Confirmez dans la boîte de dialogue qui s'affiche.</li>
+    </ol>
+    <p class="delai"><strong>Effet :</strong> immédiat et définitif — votre compte et toutes vos données associées sont supprimés dès la confirmation, sans délai d'attente.</p>
+  </div>
+
+  <div class="methode">
+    <span class="badge" style="color:#6E3A48;background:var(--rose)">Sans ouvrir l'app</span>
+    <h3>Par email</h3>
+    <ol class="etapes">
+      <li>Écrivez-nous depuis l'adresse email associée à votre compte Bible 2 Life.</li>
+      <li>Indiquez que vous demandez la suppression de votre compte et de vos données.</li>
+      <li>Nous confirmons la suppression une fois effectuée.</li>
+    </ol>
+    <a class="mail-btn" href="mailto:tlte68700@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20%E2%80%94%20Bible%202%20Life&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20supprimer%20mon%20compte%20Bible%202%20Life%20et%20les%20donn%C3%A9es%20associ%C3%A9es.%0A%0AEmail%20du%20compte%20%3A%20">✉️ Écrire à tlte68700@gmail.com</a>
+    <p class="delai"><strong>Délai :</strong> traité sous <strong>30 jours maximum</strong> à réception de votre demande, généralement bien plus vite.</p>
+  </div>
+</div>
+
+<h2>Données supprimées</h2>
+<p>La suppression du compte (par l'une ou l'autre méthode) efface définitivement :</p>
+<table>
+  <thead><tr><th>Donnée</th><th>Détail</th></tr></thead>
+  <tbody>
+    <tr><td>Compte</td><td>Adresse email, mot de passe, identifiant de compte</td></tr>
+    <tr><td>Profil</td><td>Prénom, genre, confession religieuse, tranche d'âge, habitude de lecture, niveau de motivation</td></tr>
+    <tr><td>Progression</td><td>Série de lecture, monde débloqué, collection d'agneaux</td></tr>
+    <tr><td>Journal</td><td>Toutes les entrées : humeur, textes libres, commentaires, passages reçus</td></tr>
+    <tr><td>Réglages</td><td>Préférences de rappel quotidien, liste des applications bloquées</td></tr>
+  </tbody>
+</table>
+<p>Rien de tout cela n'est archivé ailleurs dans nos systèmes après suppression : l'opération efface la ligne du compte et tout ce qui lui est rattaché en une seule fois.</p>
+
+<h2>Ce qui peut être conservé, et combien de temps</h2>
+<div class="encadre">
+  <p><strong>Aucune donnée de facturation :</strong> Bible 2 Life est entièrement gratuite aujourd'hui, nous ne détenons donc aucune donnée de paiement à conserver pour des raisons comptables.</p>
+  <p><strong>Sauvegardes techniques de routine :</strong> comme tout service hébergé, nos sauvegardes automatiques de base de données peuvent contenir une copie de vos données pendant une courte période supplémentaire après la suppression (au maximum <strong>30 jours</strong>), avant d'être écrasées par les sauvegardes suivantes. Ces sauvegardes ne sont utilisées qu'en cas d'incident technique grave, jamais consultées en usage normal.</p>
+  <p><strong>Échanges par email :</strong> si vous nous avez contactés par email, ces messages suivent la conservation habituelle de notre messagerie et ne sont pas automatiquement supprimés avec votre compte — écrivez-nous si vous souhaitez également leur suppression.</p>
+</div>
+
+<h2>Une question sur votre demande ?</h2>
+<p>Écrivez-nous à <a href="mailto:tlte68700@gmail.com">tlte68700@gmail.com</a> — nous répondons sous 2 à 3 jours ouvrés. Pour en savoir plus sur les données que nous traitons pendant que votre compte est actif, consultez notre <a href="https://charlikhalifa.github.io/bible2life-legal/confidentialite.html">politique de confidentialité</a>.</p>
+
+</main>
+
+<footer class="contenu">
+  <p>Bible 2 Life · <a href="https://charlikhalifa.github.io/bible2life-legal/support.html">Support</a> · <a href="https://charlikhalifa.github.io/bible2life-legal/confidentialite.html">Confidentialité</a> · <a href="https://charlikhalifa.github.io/bible2life-legal/conditions.html">Conditions d'utilisation</a></p>
+  <p>© 2026 Titouan Ledeur</p>
+</footer>
+
+</body>
+</html>
