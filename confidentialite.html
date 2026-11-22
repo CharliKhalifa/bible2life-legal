@@ -24,40 +24,14 @@
     font-size:18px;
     line-height:1.65;
   }
-  .bandeau{
-    background:var(--rose);
-    padding:2.5rem 1.5rem 2.2rem;
-  }
+  .bandeau{background:var(--rose);padding:2.5rem 1.5rem 2.2rem}
   .contenu{max-width:40rem;margin:0 auto;padding:0 1.5rem}
   .bandeau .contenu{padding:0 1.5rem}
-  .marque{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    font-size:.82rem;
-    font-weight:600;
-    letter-spacing:.02em;
-    color:#6E3A48;
-    margin:0 0 .6rem;
-  }
-  h1{
-    font-size:2.1rem;
-    line-height:1.15;
-    font-weight:600;
-    margin:0 0 .5rem;
-  }
-  .maj{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    font-size:.9rem;
-    color:#6E3A48;
-    margin:0;
-  }
+  .marque{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.02em;color:#6E3A48;margin:0 0 .6rem}
+  h1{font-size:2.1rem;line-height:1.15;font-weight:600;margin:0 0 .5rem}
+  .maj{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.9rem;color:#6E3A48;margin:0}
   main{padding:2.5rem 0 4rem}
-  h2{
-    font-size:1.25rem;
-    font-weight:600;
-    margin:2.6rem 0 .7rem;
-    padding-top:1.4rem;
-    border-top:1px solid var(--trait);
-  }
+  h2{font-size:1.25rem;font-weight:600;margin:2.6rem 0 .7rem;padding-top:1.4rem;border-top:1px solid var(--trait)}
   h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
   h3{font-size:1.02rem;font-weight:600;margin:1.6rem 0 .4rem}
   p,li{color:var(--encre)}
@@ -65,27 +39,14 @@
   li{margin:.4rem 0}
   a{color:var(--rose-fonce)}
   a:focus-visible,summary:focus-visible{outline:2px solid var(--rose-fonce);outline-offset:3px}
-  .encadre{
-    background:#fff;
-    border:1px solid var(--trait);
-    border-radius:14px;
-    padding:1.1rem 1.3rem;
-    margin:1.4rem 0;
-  }
+  .encadre{background:#fff;border:1px solid var(--trait);border-radius:14px;padding:1.1rem 1.3rem;margin:1.4rem 0}
   .encadre p{margin:.4rem 0}
+  .tableau{overflow-x:auto}
   table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.94rem}
   th,td{text-align:left;padding:.6rem .5rem;border-bottom:1px solid var(--trait);vertical-align:top}
   th{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:.85rem;color:var(--encre-douce);font-weight:600}
-  footer{
-    border-top:1px solid var(--trait);
-    padding:1.8rem 0 3rem;
-    font-size:.9rem;
-    color:var(--encre-douce);
-  }
-  @media (max-width:480px){
-    body{font-size:17px}
-    h1{font-size:1.7rem}
-  }
+  footer{border-top:1px solid var(--trait);padding:1.8rem 0 3rem;font-size:.9rem;color:var(--encre-douce)}
+  @media (max-width:480px){body{font-size:17px}h1{font-size:1.7rem}}
 </style>
 </head>
 <body>
@@ -94,7 +55,7 @@
   <div class="contenu">
     <p class="marque">Bible 2 Life</p>
     <h1>Politique de confidentialité</h1>
-    <p class="maj">Dernière mise à jour : 13 septembre 2026</p>
+    <p class="maj">Dernière mise à jour : 22 novembre 2026</p>
   </div>
 </header>
 
@@ -102,10 +63,11 @@
 
 <h2>En résumé</h2>
 <div class="encadre">
-  <p>Nous collectons le minimum nécessaire pour faire fonctionner l'application : votre adresse e-mail, votre progression de lecture et ce que vous choisissez d'écrire avant de recevoir votre lecture du jour.</p>
+  <p>Nous collectons le minimum nécessaire pour faire fonctionner l'application : votre adresse e-mail, votre progression de lecture, ce que vous choisissez d'écrire avant de recevoir votre lecture du jour, et le statut de votre abonnement.</p>
   <p>Nous ne vendons aucune donnée, nous n'affichons aucune publicité et nous n'utilisons pas vos écrits pour entraîner des modèles d'intelligence artificielle.</p>
-  <p>L'application est actuellement entièrement gratuite : nous ne collectons aucune donnée de paiement.</p>
-  <p>Vous pouvez supprimer votre compte et toutes vos données à tout moment, directement dans l'application (Profil &rsaquo; Supprimer mon compte).</p>
+  <p>Le paiement de l'abonnement est entièrement traité par Apple ou Google : nous ne recevons jamais vos coordonnées bancaires.</p>
+  <p>Des statistiques d'usage anonymes nous aident à améliorer l'application. Vous pouvez les désactiver à tout moment (Profil &rsaquo; Statistiques).</p>
+  <p>Vous pouvez supprimer votre compte et vos données à tout moment, directement dans l'application (Profil &rsaquo; Supprimer mon compte).</p>
 </div>
 
 <h2>Qui est responsable de vos données</h2>
@@ -114,6 +76,7 @@
 
 <h2>Les données que nous traitons</h2>
 
+<div class="tableau">
 <table>
   <thead>
     <tr><th>Catégorie</th><th>Exemples</th><th>Pourquoi</th></tr>
@@ -140,34 +103,61 @@
       <td>Générer une réponse personnalisée et alimenter votre journal</td>
     </tr>
     <tr>
+      <td>Abonnement</td>
+      <td>Identifiant interne du compte, statut et historique de l'abonnement (produit, dates d'achat, de renouvellement et d'expiration), boutique utilisée, pays de la boutique</td>
+      <td>Vérifier que votre abonnement est actif, le restaurer sur un nouvel appareil</td>
+    </tr>
+    <tr>
+      <td>Statistiques d'usage (désactivables)</td>
+      <td>Écrans consultés, ouverture de l'application, étapes franchies (inscription, fin de l'onboarding, lecture terminée, affichage de l'offre, achat), modèle d'appareil, version du système et de l'application, langue, identifiant aléatoire propre à l'installation</td>
+      <td>Comprendre comment l'application est utilisée et l'améliorer</td>
+    </tr>
+    <tr>
+      <td>Blocage d'applications (Android, facultatif)</td>
+      <td>Liste des applications que vous choisissez de verrouiller et plage horaire de blocage</td>
+      <td>Verrouiller ces applications tant que votre lecture du jour n'est pas terminée</td>
+    </tr>
+    <tr>
       <td>Rappel quotidien</td>
       <td>Heure de rappel que vous choisissez</td>
       <td>Programmer une notification locale sur votre propre appareil (aucune notification n'est envoyée depuis nos serveurs)</td>
     </tr>
   </tbody>
 </table>
+</div>
 
-<p>Nous ne collectons pas votre position précise, votre carnet d'adresses, vos photos, aucun identifiant publicitaire, ni de rapport de plantage ou d'information technique sur votre appareil.</p>
+<p>Nous ne collectons pas votre position précise, votre carnet d'adresses, vos photos, ni aucun identifiant publicitaire. Nous ne recevons jamais vos coordonnées bancaires.</p>
+
+<h3>Des statistiques anonymes</h3>
+<p>Les statistiques d'usage sont rattachées à un identifiant aléatoire généré sur votre appareil, jamais à votre adresse e-mail, à votre prénom ou à votre compte. Elles ne contiennent jamais ce que vous écrivez ni votre état émotionnel. Aucun enregistrement de votre écran n'est effectué. Vous pouvez désactiver ces statistiques à tout moment dans Profil &rsaquo; Statistiques ; plus aucun événement n'est alors envoyé depuis votre appareil.</p>
+
+<h3>Le blocage d'applications et le service d'accessibilité (Android)</h3>
+<p>Sur Android, si vous activez le blocage d'applications, Bible 2 Life utilise l'API AccessibilityService d'Android. Ce service sert uniquement à détecter quelle application s'ouvre au premier plan, afin d'afficher l'écran de blocage lorsqu'il s'agit d'une application que vous avez choisi de verrouiller et que votre lecture du jour n'est pas encore faite. Il ne lit pas le contenu de vos écrans, ne voit pas ce que vous tapez, et ces informations ne sont ni enregistrées, ni transmises à nos serveurs ou à des tiers : tout est traité sur votre téléphone. Le service n'est activé qu'avec votre accord explicite, après un écran d'explication dans l'application, et vous pouvez le désactiver à tout moment dans les réglages d'accessibilité de votre téléphone. Cette fonctionnalité n'est pas disponible sur iPhone.</p>
 
 <h3>Un mot sur l'état émotionnel et la confession religieuse</h3>
 <p>L'état émotionnel que vous sélectionnez, votre confession religieuse et le texte que vous écrivez servent uniquement à choisir des passages bibliques pertinents et à formuler un message d'encouragement. Ces éléments ne constituent pas un diagnostic et ne sont pas destinés à être traités comme des données de santé. Nous vous demandons de ne pas partager d'informations médicales, d'informations sur votre vie sexuelle, ni de données concernant d'autres personnes identifiables dans ce champ. Le traitement de votre confession religieuse et, le cas échéant, de toute information sensible que vous choisiriez d'écrire repose sur votre consentement explicite au sens de l'article 9.2.a du RGPD, et vous pouvez le retirer à tout moment en modifiant votre profil, en supprimant l'entrée concernée, ou en supprimant votre compte.</p>
 
 <h2>Bases légales</h2>
 <ul>
-  <li><strong>Exécution du contrat</strong> (art. 6.1.b RGPD) : gestion du compte, fonctionnement de l'application.</li>
+  <li><strong>Exécution du contrat</strong> (art. 6.1.b RGPD) : gestion du compte, fonctionnement de l'application, gestion de l'abonnement.</li>
   <li><strong>Consentement</strong> (art. 6.1.a et 9.2.a) : notifications, texte libre, état émotionnel et confession religieuse.</li>
-  <li><strong>Intérêt légitime</strong> (art. 6.1.f) : sécurité, prévention de la fraude et des abus.</li>
+  <li><strong>Intérêt légitime</strong> (art. 6.1.f) : statistiques d'usage anonymes pour améliorer l'application (vous pouvez vous y opposer à tout moment depuis l'application), sécurité, prévention de la fraude et des abus.</li>
 </ul>
 
 <h2>Intelligence artificielle</h2>
 <p>Pour choisir vos passages du jour et rédiger le message qui les accompagne, les informations suivantes sont transmises à l'API Gemini de Google (Google Ireland Limited) : l'état émotionnel sélectionné, le texte libre que vous avez saisi, votre prénom, votre genre, votre confession religieuse, votre tranche d'âge et votre habitude de lecture. Cette transmission est ponctuelle, liée à votre demande, et ne contient jamais votre adresse e-mail ni votre mot de passe. Ces contenus ne sont pas utilisés par Google pour entraîner ses modèles.</p>
+<p>Avant votre première lecture, l'application vous explique précisément ces informations et vous demande votre accord explicite. Sans cet accord, aucune donnée n'est transmise et aucune lecture n'est générée.</p>
+<p>Chaque message généré peut être signalé directement depuis l'application (« Signaler ce commentaire »). Le signalement enregistre la référence du passage, le texte du message signalé, le motif choisi et l'identifiant interne de votre compte, afin d'examiner le problème et d'améliorer les messages. Les signalements sont conservés au plus 12 mois, et supprimés avec votre compte.</p>
 <p>Le texte biblique affiché est toujours le texte authentique (traduction Louis Segond, 1910) — il n'est jamais généré ni modifié par une intelligence artificielle. Les messages qui l'accompagnent sont proposés à titre d'encouragement spirituel. Ils ne constituent pas une révélation de la volonté de Dieu, ni un avis médical, psychologique ou professionnel. Si vous exprimez une détresse grave, l'application vous orientera vers des ressources d'aide humaine.</p>
 
 <h2>Sous-traitants et destinataires</h2>
 <ul>
   <li><strong>Supabase Inc.</strong> (États-Unis, hébergement effectué dans l'Union européenne) : authentification et base de données (compte, profil, journal, collection).</li>
   <li><strong>Google Ireland Limited</strong> : génération des passages et messages personnalisés (API Gemini).</li>
+  <li><strong>RevenueCat, Inc.</strong> (États-Unis) : vérification et suivi du statut de l'abonnement. RevenueCat reçoit l'identifiant interne de votre compte et les informations d'achat transmises par Apple ou Google, jamais votre adresse e-mail ni vos coordonnées bancaires.</li>
+  <li><strong>PostHog, Inc.</strong> (États-Unis, hébergement effectué dans l'Union européenne) : statistiques d'usage anonymes.</li>
 </ul>
+<p>Le paiement de l'abonnement est traité par <strong>Apple</strong> (App Store) ou <strong>Google</strong> (Google Play), qui agissent en tant que responsables de traitement distincts selon leurs propres politiques de confidentialité.</p>
 <p>Nous ne vendons ni ne louons vos données personnelles, et nous ne les partageons à aucune fin publicitaire.</p>
 
 <h2>Transferts hors de l'Union européenne</h2>
@@ -177,11 +167,13 @@
 <ul>
   <li>Données de compte, de profil et de progression : tant que le compte est actif, puis 30 jours après la demande de suppression.</li>
   <li>Texte libre, état émotionnel et journal : 12 mois, sauf suppression manuelle antérieure.</li>
+  <li>Données d'abonnement : pendant la durée de l'abonnement, puis le temps nécessaire au respect de nos obligations légales et comptables.</li>
+  <li>Statistiques d'usage : 12 mois au maximum.</li>
 </ul>
 
 <h2>Vos droits</h2>
 <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, ainsi que du droit de retirer votre consentement à tout moment et de définir des directives relatives au sort de vos données après votre décès.</p>
-<p>Pour les exercer, écrivez à <a href="mailto:tlte68700@gmail.com">tlte68700@gmail.com</a>. Nous répondons sous un mois. Vous pouvez également supprimer votre compte et l'intégralité de vos données vous-même, à tout moment, depuis l'application (Profil &rsaquo; Supprimer mon compte).</p>
+<p>Pour les exercer, écrivez à <a href="mailto:tlte68700@gmail.com">tlte68700@gmail.com</a>. Nous répondons sous un mois. Vous pouvez également supprimer votre compte et l'intégralité de vos données vous-même, à tout moment, depuis l'application (Profil &rsaquo; Supprimer mon compte). La suppression du compte ne résilie pas l'abonnement : pensez à l'annuler dans les réglages de votre compte App Store ou Google Play.</p>
 <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL, 3 place de Fontenoy, 75007 Paris — <a href="https://www.cnil.fr">www.cnil.fr</a>.</p>
 
 <h2>Enfants</h2>
