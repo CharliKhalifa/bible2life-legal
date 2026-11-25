@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bible 2 Life</title>
+  <meta name="description" content="Lis la Bible chaque jour, selon ce que tu vis." />
+  <meta property="og:title" content="Bible 2 Life" />
+  <meta property="og:description" content="Lis la Bible chaque jour, selon ce que tu vis." />
+  <meta property="og:image" content="https://charlikhalifa.github.io/bible2life-legal/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="L'application Bible 2 Life" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bible 2 Life" />
+  <meta name="twitter:description" content="Lis la Bible chaque jour, selon ce que tu vis." />
+  <meta name="twitter:image" content="https://charlikhalifa.github.io/bible2life-legal/og-image.png" />
+  <meta name="theme-color" content="#fdf3f1" />
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fdf3f1;      /* accent50 */
+      --ink: #17243d;     /* app ink */
+      --soft: #6e5a58;
+      --accent: #c9584f;  /* accent500 */
+      --muted: #8c5b57;   /* accent800 */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 1rem 6rem;
+    }
+    .copy { width: 100%; }
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+    h1 .hl { color: var(--accent); font-weight: 700; }
+    .sub {
+      margin: 0 0 3rem;
+      font-size: 1.25rem;
+      color: var(--soft);
+    }
+    .sub .hl { color: var(--accent); }
+    .badges-wrap { display: flex; align-items: center; justify-content: center; }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: .75rem;
+    }
+    .badges a { display: inline-block; transition: opacity .15s; }
+    .badges a:hover { opacity: .9; }
+    .badges img { display: block; width: 180px; height: auto; }
+
+    .video-card {
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-box { width: 100%; max-width: 20rem; aspect-ratio: 9 / 16; }
+    .video-box video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+      background: #e18e88;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: .875rem;
+      color: var(--muted);
+    }
+    footer .links { margin-bottom: .5rem; }
+    footer .links a { margin: 0 .5rem; transition: color .15s; }
+    footer .links a:hover { color: var(--ink); }
+    footer .dot { margin: 0 .25rem; }
+
+    @media (min-width: 640px) {
+      .page { padding: 2rem 2rem 6rem; }
+      h1 { font-size: 3.75rem; margin-bottom: .75rem; }
+      .sub { margin-bottom: 3.5rem; }
+      .badges-wrap { justify-content: flex-start; }
+      .badges img { width: 220px; }
+      .video-box { max-width: 24rem; }
+    }
+    @media (min-width: 768px) {
+      h1 { font-size: 6rem; }
+      .sub { font-size: 1.875rem; }
+      .badges img { width: 250px; }
+      .video-box { max-width: 28rem; }
+    }
+    @media (min-width: 1024px) {
+      .page { flex-direction: row; }
+      .copy { max-width: 42rem; margin-right: 4rem; }
+      .video-card { width: 350px; margin-top: 0; }
+      .video-box { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="copy">
+      <h1>Ta Bible,<br /><span class="hl">pour ce que tu&nbsp;vis</span></h1>
+      <div class="sub">un passage choisi selon ton <span class="hl">humeur</span>, chaque jour</div>
+      <div class="badges-wrap">
+        <div class="badges">
+          <a href="https://apps.apple.com/fr/app/id6811401819">
+            <img src="app-store-badge.svg" alt="Télécharger dans l'App Store" width="200" height="67" />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=bible2life.app">
+            <img src="google-play-badge.png" alt="Disponible sur Google Play" width="200" height="60" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-box">
+        <video src="demo.mp4" poster="poster.jpg" autoplay loop muted playsinline></video>
+      </div>
+    </div>
+
+    <footer>
+      <div class="links">
+        <a href="conditions.html">Conditions d'utilisation</a><span class="dot">•</span><a href="confidentialite.html">Confidentialité</a><span class="dot">•</span><a href="support.html">Nous contacter</a>
+      </div>
+      <div>© 2026 Bible 2 Life. Tous droits réservés.</div>
+    </footer>
+  </main>
+</body>
+</html>
